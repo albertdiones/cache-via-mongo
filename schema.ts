@@ -3,7 +3,7 @@ import * as mongoose from 'mongoose';
 const cacheItemSchema = new mongoose.Schema(
     {
         key: {type: String, required: true, unique: true, },
-        value: {type: String, required: true},
+        value: { type: mongoose.Schema.Types.Mixed, required: true },
         expiration: {type: Number, required: true},
     }
 );
