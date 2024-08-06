@@ -7,7 +7,7 @@ const mongoUrl = 'mongodb://localhost:27017/cache_via_mongo_test';
 await mongoose.connect(mongoUrl);
 
 
-function fetchWithCache(url): Promise<string> {
+function fetchWithCache(url: string): Promise<string> {
     return cache.getItem(url).then(
         (cacheItem: CacheItem | null) => {
             if (cacheItem) {
