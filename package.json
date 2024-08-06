@@ -2,7 +2,12 @@
   "name": "cache-via-mongo",
   "version": "0.0.2",
   "description": "Caching Adapter using MongoDb (Mongoose)",
-  "main": "index.ts",
+  "main": "dist/index.js",
+  "exports": {
+    "import": "./src/index.ts",
+    "require": "./dist/index.js",
+    "default": "./dist/index.js"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
