@@ -1,6 +1,6 @@
 {
   "name": "cache-via-mongo",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Caching Adapter using MongoDb (Mongoose)",
   "main": "dist/index.js",
   "exports": {
